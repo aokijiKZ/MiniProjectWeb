@@ -29,7 +29,7 @@
       <script src="js/vendor/respond.min.js"></script>
     <![endif]-->
   <style>
-    h2{
+    h2 {
       font-size: 24px;
       color: aliceblue;
     }
@@ -79,13 +79,22 @@
       <h2>TeacherAey เเละ Sense MaTH</h2>
       <div class="m-2">รับสอนพิเศษรายวิชาคณิตศาสตร์เเละภาษาไทย<br>
         ระดับ ประถม-มัธยม<br>
-        เวลาทำการ<br> 
-         อังคาร - ศุกร์ 16:30 - 19:00 น.<br>
-         เสาร์ - อาทิตย์ 09:00 - 16:00 น.<br>
-        โทร. 087-7911779</div>
+        เวลาทำการ<br>
+        อังคาร - ศุกร์ 16:30 - 19:00 น.<br>
+        เสาร์ - อาทิตย์ 09:00 - 16:00 น.<br>
+        โทร. 087-7911779</div><br>
       <img src="img/floor3/IMG_3610.jpg" width="100%" class="m-2">
     </div>
-    
+
+    <div id="text2" style="display: none;">
+      <h2>KRUBOW CHINESE</h2>
+      <div class="m-2">- คอร์สปูพื้นฐานภาษาจีน ฟัง พูด อ่าน เขียน<br>
+        - คอร์สสทนาในชีวิติประจำวัน<br>
+        - คอร์สเพิ่มความเข้าใจวิชาภาษาจีนในชั้นเรียน<br>
+        - คอร์สติวสอบ HSK,HSKK,YCT<br>
+        - คอร์สติวสอบ PAT7.4(เตรียมสอบเข้ามหาวิทยาลัย)</div><br>
+      <img src="img/floor3/IMG_3611.jpg" width="100%" class="m-2">
+    </div>
 
     <div class="container">
 
@@ -123,13 +132,23 @@
             markers: [
               {
                 "id": "marker-1",
-                "image": "https://photo-sphere-viewer.js.org/assets/pin-red.png",
+                "image": "img/loc.png",
                 "longitude": 2.31,
                 "latitude": -0.052,
                 "width": 32,
                 "height": 32,
                 "tooltip": "TeacherAey เเละ Sense MaTH",
                 "content": $("#text1").html()
+              },
+              {
+                "id": "marker-2",
+                "image": "img/loc.png",
+                "longitude": 2.905,
+                "latitude": -0.047,
+                "width": 32,
+                "height": 32,
+                "tooltip": "KRUBOW CHINESE",
+                "content": $("#text2").html()
               }
             ]
           }]]
