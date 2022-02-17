@@ -28,6 +28,12 @@
       <script src="js/vendor/html5shiv.min.js"></script>
       <script src="js/vendor/respond.min.js"></script>
     <![endif]-->
+  <style>
+    h2{
+      font-size: 24px;
+      color: aliceblue;
+    }
+  </style>
 </head>
 
 <body>
@@ -68,6 +74,19 @@
   <!-- END: header -->
 
   <section class="probootstrap-section">
+
+    <div id="text1" style="display: none;">
+      <h2>TeacherAey เเละ Sense MaTH</h2>
+      <div class="m-2">รับสอนพิเศษรายวิชาคณิตศาสตร์เเละภาษาไทย<br>
+        ระดับ ประถม-มัธยม<br>
+        เวลาทำการ<br> 
+         อังคาร - ศุกร์ 16:30 - 19:00 น.<br>
+         เสาร์ - อาทิตย์ 09:00 - 16:00 น.<br>
+        โทร. 087-7911779</div>
+      <img src="img/floor3/IMG_3610.jpg" width="100%" class="m-2">
+    </div>
+    
+
     <div class="container">
 
       <div class="row">
@@ -99,6 +118,21 @@
       var viewer = new PhotoSphereViewer.Viewer({
         container: document.querySelector('#viewer'),
         panorama: 'img/floor3/VGHA3010.jpg',
+        plugins: [
+          [PhotoSphereViewer.MarkersPlugin, {
+            markers: [
+              {
+                "id": "marker-1",
+                "image": "https://photo-sphere-viewer.js.org/assets/pin-red.png",
+                "longitude": 2.31,
+                "latitude": -0.052,
+                "width": 32,
+                "height": 32,
+                "tooltip": "TeacherAey เเละ Sense MaTH",
+                "content": $("#text1").html()
+              }
+            ]
+          }]]
       });
     </script>
 
