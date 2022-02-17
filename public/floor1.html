@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>KKU Travel</title>
+  <meta name="description" content="Free Bootstrap Theme by uicookies.com">
+  <meta name="keywords"
+    content="free website templates, free bootstrap themes, free template, free bootstrap, free website template">
+
+  <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles-merged.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/custom.css">
+
+  <!--import photo-sphere-viewer -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photo-sphere-viewer@4/dist/photo-sphere-viewer.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photo-sphere-viewer@4/dist/plugins/markers.min.css" />
+
+  <script src="https://cdn.jsdelivr.net/npm/three/build/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/uevent@2/browser.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/photo-sphere-viewer@4/dist/photo-sphere-viewer.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/photo-sphere-viewer@4/dist/plugins/markers.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!--[if lt IE 9]>
+      <script src="js/vendor/html5shiv.min.js"></script>
+      <script src="js/vendor/respond.min.js"></script>
+    <![endif]-->
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Itim&family=Noto+Sans+Thai:wght@300&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Itim&family=Mali:wght@200&display=swap');
+
+    .textfloor {
+      font-family: 'Itim', cursive;
+      color: rgb(83, 83, 83);
+      font-size: 40px;
+    }
+
+    .textdetail {
+      font-family: 'Mali', cursive;
+      font-size: 22px;
+      color: rgb(65, 65, 65);
+    }
+
+    .textdetail2 {
+      font-family: 'Mali', cursive;
+      font-size: 14px;
+      color: white;
+    }
+
+    .texttitle2 {
+      font-family: 'Itim', cursive;
+      font-size: 20px;
+      color: white;
+    }
+
+    h2 {
+      font-size: 24px;
+      color: aliceblue;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- START: header -->
+
+  <div class="probootstrap-loader"></div>
+
+  <header role="banner" class="probootstrap-header">
+    <div class="container">
+      <a href="index.html" class="probootstrap-logo">KKU Travel<span>.</span></a>
+
+      <a href="#" class="probootstrap-burger-menu visible-xs"><i>Menu</i></a>
+      <div class="mobile-menu-overlay"></div>
+
+      <nav role="navigation" class="probootstrap-nav hidden-xs">
+        <ul class="probootstrap-main-nav">
+          <li><a href="index.html">Home</a></li>
+          <li class="active"><a href="floor1.html">Floor 1</a></li>
+          <li class="active"><a href="floor3.html">Floor 3</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="extra-text visible-xs">
+          <a href="#" class="probootstrap-burger-menu"><i>Menu</i></a>
+          <h5>Address</h5>
+          <p>198 West 21th Street, Suite 721 New York NY 10016</p>
+          <h5>Connect</h5>
+          <ul class="social-buttons">
+            <li><a href="#"><i class="icon-twitter"></i></a></li>
+            <li><a href="#"><i class="icon-facebook2"></i></a></li>
+            <li><a href="#"><i class="icon-instagram2"></i></a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <!-- END: header -->
+
+  <section class="probootstrap-section">
+
+    <div id="bekery" style="display: none;">
+      <h2 class="texttitle2">Bellinee's Bake & Brew</h2>
+      <div class="textdetail2 m-2">ร้านขายขนมปังครัวซอง<br>
+        Free Wifi<br>
+        เวลาทำการ<br>
+        6:00 - 20:00 น.<br>
+        https://www.facebook.com/bellinee/</div><br>
+      <img src="img/floor1/IMG_3599.jpg" width="100%" class="m-2">
+    </div>
+
+    <div id="bankzone" style="display: none;">
+      <h2 class="texttitle2">BANK ZONE</h2>
+      <div class="textdetail2 m-2">ธนาคารกรุงศรีอยุธยา (Krungsri)<br><br>
+        <img src="img/floor1/IMG_3620.jpg" width="100%" class="m-2"><br><br>
+        ธนาคารกรุงไทย (Krungthai)<br><br>
+        <img src="img/floor1/IMG_3619.jpg" width="100%" class="m-2"><br><br>
+      </div><br>
+    </div>
+
+    <div id="remax" style="display: none;">
+      <h2 class="texttitle2">Remax</h2>
+      <div class="textdetail2 m-2">อุปกรณ์โทรศัพท์คุณภาพราคาถูก มีประกัน<br>
+        เปิดทุกวัน 8.00 - 20.00 น<br>
+        โทรศัพท์: 066 154 4946<br><br>
+        <img src="img/floor1/IMG_3617.jpg" width="100%" class="m-2"><br>
+      </div><br>
+    </div>
+
+    <div id="eatingzone" style="display: none;">
+      <h2 class="texttitle2">โซนทานอาหาร</h2>
+      <div class="textdetail2 m-2">นั่งเล่นสุดชิล,อ่านหนังสือ,นอน,กินข้าว,จิปาถะ</div><br>
+      <img src="img/floor1/IMG_3618.jpg" width="100%" class="m-2">
+    </div>
+
+    <div id="malangpoh" style="display: none;">
+      <h2 class="texttitle2">ร้านแมลงปอ</h2>
+      <div class="textdetail2 m-2">ขายอุปกรณ์เครื่องเขียน, ของขวัญ, อุปกรณ์การฝีมือ<br>
+        พลาสติกใส, ฟีเจอร์บอร์ด, สติกเกอร์ใส ฯลฯ<br>
+        เวลาทำการ 10:00 - 20.00 น.<br>
+        โทร.081 601 7799</div><br><br>
+      <img src="img/floor1/IMG_3601.jpg" width="100%" class="m-2">
+    </div>
+
+    <div class="container">
+
+      <div class="row">
+        <div class="col-md-12">
+          <div class="card-body text-center">
+            <div id="viewer" style="width: 100%; height: 500px;"></div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div class="col-md-7 col-md-push-5">
+          <h2 class="textfloor">ชั้น 1</h2>
+          <p class="textdetail">ชั้น 1 ของ Complex<br>
+            -พื้นที่ขายอาหาร<br>
+            -ธนาคาร (ธนาคารกรุงศรีอยุธยา, ธนาคารกรุงไทย, ธนาคารไทยพาณิชย์(SCB)<br>
+            -ร้านขายของใช้ทั่วไป ร้านกาแฟ และร้านขายเสื้อผ้า<br>
+            -ร้านสะดวกซื้อ 7-11</p>
+        </div>
+      </div>
+    </div>
+
+
+    <script>
+      var viewer = new PhotoSphereViewer.Viewer({
+        container: document.querySelector('#viewer'),
+        panorama: 'img/floor1/TBYS4312.jpg',
+        plugins: [
+          [PhotoSphereViewer.MarkersPlugin, {
+            markers: [
+              {
+                "id": "Bellinees",
+                "image": "img/loc.png",
+                "longitude": 3.539,
+                "latitude": -0.024,
+                "width": 32,
+                "height": 32,
+                "tooltip": "Bellinee's ร้านเบเกอรี่",
+                "content": $("#bekery").html()
+              },
+              {
+                "id": "Bankzone",
+                "image": "img/loc.png",
+                "longitude": 4.467,
+                "latitude": -0.024,
+                "width": 32,
+                "height": 32,
+                "tooltip": "Bank Zone",
+                "content": $("#bankzone").html()
+              },
+              {
+                "id": "Remax",
+                "image": "img/loc.png",
+                "longitude": 2.007,
+                "latitude": -0.033,
+                "width": 32,
+                "height": 32,
+                "tooltip": "Remax",
+                "content": $("#remax").html()
+              },
+              {
+                "id": "Eatingzone",
+                "image": "img/loc.png",
+                "longitude": 5.34,
+                "latitude": -0.04,
+                "width": 32,
+                "height": 32,
+                "tooltip": "โซนพักผ่อน",
+                "content": $("#eatingzone").html()
+              },
+              {
+                "id": "Malangpoh",
+                "image": "img/loc.png",
+                "longitude": 2.657,
+                "latitude": -0.037,
+                "width": 32,
+                "height": 32,
+                "tooltip": "ร้านแมลงปอ",
+                "content": $("#malangpoh").html()
+              }
+            ]
+          }]]
+      });
+    </script>
+
+  </section>
+  <!-- END section -->
+
+
+  <footer class="probootstrap-footer" role="contentinfo">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <p class="probootstrap-copyright">&copy; 2017 <a href="https://uicookies.com/">uiCookies:Explorer</a> All
+            Rights Reserved.</p>
+          <ul class="probootstrap-social">
+            <li><a href="#"><i class="icon-twitter"></i></a></li>
+            <li><a href="#"><i class="icon-facebook2"></i></a></li>
+            <li><a href="#"><i class="icon-instagram2"></i></a></li>
+            <li><a href="#"><i class="icon-google-plus"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="gototop js-top">
+    <a href="#" class="js-gotop"><i class="icon-chevron-thin-up"></i></a>
+  </div>
+
+
+  <script src="js/scripts.min.js"></script>
+  <script src="js/main.min.js"></script>
+  <script src="js/custom.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
